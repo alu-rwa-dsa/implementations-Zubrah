@@ -18,3 +18,7 @@ inputs = [["g", "h", "a"], ["h", "z", "a"], ["g", "m", "z"]]
 print("The original list is : " + str(inputs)) 
   
 print("The String after duplicates removal is : ", lists_of_list(inputs)) 
+
+
+""" for this algorithim we can see that the time complexity for running this algorithim would be O(n^2)
+due to the existance of two  iterators while the space complexity is O(n) as number of elements in the lists"""

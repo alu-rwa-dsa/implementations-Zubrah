@@ -8,3 +8,6 @@ def Missing_element():
 
 
 Missing_element()
+
+""" For this algorithim the time complexity to run would be O(n) as it passes through all elements checking 
+in the lists while the space complexity is O(1) as it checks without adding anything to memory"""

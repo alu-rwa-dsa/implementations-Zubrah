@@ -10,7 +10,7 @@ def Occurance_of_String(name):
 # iterate the inputs to count the occurance of each string
     for i in Inputs:
         if i in frequency_of_string:
-             frequency_of_string[i] += 1
+            frequency_of_string[i] += 1
         else:
             frequency_of_string[i] = 1 
 
@@ -22,3 +22,5 @@ Occurance_of_String(Inputs)
   
 # printing result  
 print ("Count of all characters in your String is :\n " +  str(frequency_of_string))
+
+"""For this algorithim the time complexity is O(n) while the space complexity"""
