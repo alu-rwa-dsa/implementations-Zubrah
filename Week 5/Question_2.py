@@ -1,3 +1,17 @@
+"""Time Complexity:
+a) The Time complexity of insertion and deletion a value between the node is depends on the position
+your going to insert or delete, when the position is in-front of the node the Time complexity will be
+O(1) but if either between the node or at the end it will take O(n) time complexity.
+b) The Time complexity to perform a search operation in both terms will take O(n)
+
+Space Complexity:
+a) The Space Complexity of insertion, deletion and searching will take O(1) in both terms as
+no more memory is required to extend memory.
+b) The Space complexity of adding, checking if empty or size of the linked list will take O(1)
+as also they don't tend to add any memory.
+"""
+
+
 class Node(object):
     def __init__(self, data, Next=None, Previous=None):
         self.data = data
@@ -27,8 +41,12 @@ class Doubly_Linked_List(object):
     def __init__(self):
         self.head = None
 
+    # method to check if the Linked List is empty
+
     def isEmpty(self):
         return self.head is None
+
+    # method to add data to the first Node
 
     def insertFirst(self, data):
         newNode = Node(data)
@@ -36,6 +54,8 @@ class Doubly_Linked_List(object):
             self.head.setPrevious(newNode)
         newNode.setNext(self.head)
         self.head = newNode
+
+    # method to add data to the last Node
 
     def insertLast(self, data):
         newNode = Node(data)
@@ -55,6 +75,7 @@ class Doubly_Linked_List(object):
 
         return elements
 
+    # method to remove an item from a linked list
     def remove(self, item):
         current = self.head
         previous = None

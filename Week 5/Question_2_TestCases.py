@@ -1,6 +1,7 @@
 import unittest
 from Question_2 import *
 
+
 myList = Doubly_Linked_List()
 myList.insertFirst(1)
 myList.insertFirst(12)

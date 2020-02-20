@@ -1,5 +1,20 @@
 # Stack implementation using singly Linked lIst
 # create a Node class
+# Time and Space Complexity:
+"""The time Complexity for checking,
+ a) isEmpty method  will be O(n) due to the fact it will check throughout all elements in the Stack list
+ b) Push,pop and peek methods will take O(1) time complexity as it just push to the recent spot without passing through
+  the whole code.
+ c) The size method will take O(n) time complexity due to the factor that it has it has to pass and check all elements
+  in a stack and returns the value of total number of elements.
+
+  Space Complexity:
+  a) The Empty and size method will take O(1) space complexity due to the factors that they don't add anything to
+  the Stack but rather checking  elements
+  b) The peek and pop method will take O(1) space complexity as it removes and peeks but doesn't require any addition
+   of the structure of Stack
+  c) The push method will take O(n) space complexity in a worst case scenario as it involves requiring an extra space
+   every time adding an element to the Stack."""
 
 
 class Node:
