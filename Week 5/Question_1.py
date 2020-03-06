@@ -1,7 +1,7 @@
 """
 Time Complexity:
 a) The Time complexity of insertion and deletion a value between the node is depends on the position
-your going to insert or delete, when the position is infront of the node the Time complexity will be
+your going to insert or delete, when the position is in-front of the node the Time complexity will be
 O(1) but if either between the node or at the end it will take O(n) time complexity.
 b) The Time complexity to perform a search operation in both terms will take O(n)
 
@@ -11,6 +11,7 @@ no more memory is required to extend memory.
 b) The Space complexity of adding, checking if empty or size of the linked list will take O(1)
 as also they don't tend to add any memory.
 """
+
 
 class Node:
     def __init__(self, Linked_list):
@@ -60,13 +61,13 @@ class OrderedList_Implementations:
                 previous = current
                 current = current.retrieve_Next_Node()
 
-        temp = Node(Node_Value)
+        var = Node(Node_Value)
         if previous is None:
-            temp.set_Next_Node(self.head)
-            self.head = temp
+            var.set_Next_Node(self.head)
+            self.head = var
         else:
-            temp.set_Next_Node(current)
-            previous.set_Next_Node(temp)
+            var.set_Next_Node(current)
+            previous.set_Next_Node(var)
 
     def isEmpty(self):
         return self.head is None
@@ -83,6 +84,7 @@ class OrderedList_Implementations:
 
 Implementations = OrderedList_Implementations()
 Implementations.add(31)
+Implementations.add(120)
 
 print(Implementations.size())
 print(Implementations.search(93))
